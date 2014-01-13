@@ -17,6 +17,10 @@ git commit -m "first commit"
 git remote add origin git@github.com:hariinfo/static-site-template.git
 git push -u origin master
 
-
+## Add an existing repo to git
 git remote add origin git@github.com:hariinfo/static-site-template.git
 git push -u origin master
+
+## Delete files in git repo
+git filter-branch -f --tree-filter 'rm -rf *' HEAD
+git push origin master --force
